@@ -109,11 +109,17 @@ table 50100 "BSB Book"
         Error(OnDeleteBookErr);
     end;
 
+    /// <summary>
+    /// Function TestBlocked checks tah book isn't blocked
+    /// </summary>
     procedure TestBlocked()
     begin
         TestField(Blocked, false);
     end;
 
+    /// <summary>
+    /// Central Function for showing book card.
+    /// </summary>
     procedure ShowCard()
     begin
         Page.Run(Page::"BSB Book Card", Rec);
