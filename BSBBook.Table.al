@@ -105,7 +105,13 @@ table 50100 "BSB Book"
     end;
 
     trigger OnDelete()
+    var
+        IsHandled: Boolean;
     begin
+        OnBeforeOnDelete(Rec, xRec, IsHandled);
+        if IsHandled then
+            exit;
+
         Error(OnDeleteBookErr);
     end;
 
@@ -117,11 +123,32 @@ table 50100 "BSB Book"
         TestField(Blocked, false);
     end;
 
+    procedure ShowCard()
+    begin
+        ShowCard(Rec);
+    end;
+
     /// <summary>
     /// Central Function for showing book card.
     /// </summary>
-    procedure ShowCard()
+    procedure ShowCard(BookNo: Code[20])
+    var
+        BSBBook: Record "BSB Book";
     begin
-        Page.Run(Page::"BSB Book Card", Rec);
+        if not BSBBook.Get(BookNo) then
+            exit;
+        ShowCard(BSBBook);
     end;
+
+    procedure ShowCard(BSBBook: Record "BSB Book")
+    begin
+        Page.Run(Page::"BSB Book Card", BSBBook);
+    end;
+
+    [IntegrationEvent(false, false)]
+    local procedure OnBeforeOnDelete(var Rec: Record "BSB Book"; var xRec: Record "BSB Book"; var IsHandled: Boolean)
+    begin
+    end;
+
+
 }

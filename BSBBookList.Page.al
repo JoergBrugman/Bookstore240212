@@ -51,4 +51,18 @@ page 50101 "BSB Book List"
         }
 
     }
+    actions
+    {
+        area(Processing)
+        {
+            action(CreateBooks)
+            {
+                Caption = 'Create Books';
+                Image = CreateDocuments;
+                ApplicationArea = All;
+                ToolTip = 'Executes the Create Books action.';
+                RunObject = codeunit "BSB Create Books";
+            }
+        }
+    }
 }
