@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file datatype="xml" source-language="en-US" target-language="en-US" original="Bookstore Base">
+    <body>
+      <group id="body">
+        <trans-unit id="Report 2834728084 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>BSB Book List</source>
+          <target>BSB Book List</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report BSB Book List - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 2834728084 - ReportLabel 2824040130" size-unit="char" translate="yes" xml:space="preserve">
+          <source>BSB Book List</source>
+          <target>BSB Book List</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report BSB Book List - ReportLabel TitleCaption</note>
+        </trans-unit>
+        <trans-unit id="Report 2834728084 - ReportLabel 501693335" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Page {0} of {1}</source>
+          <target>Page {0} of {1}</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report BSB Book List - ReportLabel PageCaption</note>
+        </trans-unit>
+        <trans-unit id="Report 2834728084 - ReportLabel 1583171122" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Total</source>
+          <target>Total</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report BSB Book List - ReportLabel TotalCaptionLbl</note>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>
