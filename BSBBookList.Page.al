@@ -30,6 +30,10 @@ page 50101 "BSB Book List"
                 {
                     ToolTip = 'Specifies the value of the Author field.';
                 }
+                field(Type; Rec."Type")
+                {
+                    ToolTip = 'Specifies the value of the Type field.';
+                }
                 field("No. of Pages"; Rec."No. of Pages")
                 {
                     ToolTip = 'Specifies the value of the No. of Pages field.';
@@ -62,6 +66,24 @@ page 50101 "BSB Book List"
                 ApplicationArea = All;
                 ToolTip = 'Executes the Create Books action.';
                 RunObject = codeunit "BSB Create Books";
+            }
+            action(BookSale)
+            {
+                Caption = 'Start Sales Process';
+                image = Process;
+                ApplicationArea = All;
+                ToolTip = 'Executes the Start Sales Process action.';
+                Promoted = true;
+
+                trigger OnAction()
+                var
+                    BSBBokkTypeProcessMgmt: Codeunit "BSB Book Type Process Mgmt.";
+                    BSBBookType: Interface "BSB Book Type Process";
+                begin
+                    BSBBookType := BSBBokkTypeProcessMgmt.GetHandler(Rec);
+                    BSBBookType.StartDeployBook();
+                    BSBBookType.StartDeliverBook();
+                end;
             }
         }
     }

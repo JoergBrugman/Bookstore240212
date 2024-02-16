@@ -243,6 +243,21 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page BSB Book List - Control No. of Pages - Property ToolTip</note>
         </trans-unit>
+        <trans-unit id="Page 2834728084 - Control 1878130204 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Type field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page BSB Book List - Control Type - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2834728084 - Action 2407366406 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Executes the Start Sales Process action.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page BSB Book List - Action BookSale - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2834728084 - Action 2407366406 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Start Sales Process</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page BSB Book List - Action BookSale - Property Caption</note>
+        </trans-unit>
         <trans-unit id="Page 2834728084 - Action 3245378402 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
           <source>Executes the Create Books action.</source>
           <note from="Developer" annotates="general" priority="2"></note>
